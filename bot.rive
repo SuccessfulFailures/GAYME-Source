@@ -1,0 +1,226 @@
+//May be unorganized
+//Started in Febuary
++ start 
+//- Hiya friend, Im GAYME here to help with game consoles.<br>
+- Hiya friend, Im GAYME here to help with game consoles. How can I start you off for today?
+
++ *
+- Sorry, as a gamer I don't go outside and don't understand human very well, please rephrase
+
++ help
+- Here are a couple commands to help you get started<br>
+^ - Search "console"<br>
+^ - Ambience<br>
+^ - pause (when music is playing)<br>
+^ - Credits<br>
+^ - Best Console (for kids)<br>
+^ - Source (display database)<br>
+^ - ₛₑ𝒸ᵣₑₜ<br>
+^ <br>
+^ Hacker? Ask about hacking your console (at your own risk)
+//^ - Favorite "console" game <br> //to be determined
+
+
+
+//Best consoles (May be removed) (first diaglog tree)
++ [*]best consoles[*] [*]kids[*]
+- instert list
+
++ [*]best console[*] [*]kids[*] //difference between this and last is there is no s in end of consoles (it doesnt want to add more than 2 keywords)
+- insert list
+
++ [*]best consoles[*]
+- insert list
+
++ [*]best console[*] //difference between this and last is there is no s in end of consoles (it doesnt want to add more than 2 keywords)
+- insert list
+
+
+
+//uwu I add stuff
++ [*]nintendo[*][*]models[*]
+- So you wanna see this game console with some drip ;)<br>The Nintendo Switch has multiple alts<br>
+^ <a target="_blank" href="https://www.nintendo.com/store/products/nintendo-switch-oled-model-white-set/"> Nintendo Switch</a><br>
+^ <a target="_blank" href=""Nintendo Switch OLED<br>
+^ Nintendo Switch lite<br>
+
+
+//Describes console modding/hacking (second dialog tree)
++ [*]hacked[*]
+- {topic=1} {@ start}
++ [*]hack[*]
+- {topic=1} {@ start}
+
+//Console search (third dialog tree) ()
++ search *
+- Searching... <call>searchTerms <star></call>
+
+
+//easter eggs
++ 88224646ba
+- <a href="https://mixtapeisfire.github.io/gba/launcher.html#bomberman_max2blue">Click Here</a> //bomberman GBA Emulator
+
++ wwssadadba
+- <a href="https://mixtapeisfire.github.io/gba/launcher.html#bomberman_max2blue">Click Here</a> //bomberman GBA Emulator
+
++ poyo
+- <a href="https://mixtapeisfire.github.io/gba/launcher.html#kirbynightmare">Click Here</a> //Kirby GBA Emulator
+
++ vroom vroom
+- <a href="https://mixtapeisfire.github.io/gba/launcher.html#mariokart">Click Here</a> //Mario Kart GBA Emulator
+
++ roll
+- <call>rickroll</call><call>closeTab</call> //Rick Roll (with ad)
+
++ freddy
+- <call>freddy</call> //plays Freddy's Musicbox
+
++ [*]genshin[*]
+- <video width="320" height="240" autoplay ><source src="/audio/Grass.mp4" type="video/mp4"></video>
+
+
+//secrets
++ secret
+- here are some unnecessary phrases<br>
+^ roll<br>
+^ freddy<br>
+^ vroom vroom<br>
+^ poyo<br>
+^ [insert konami code on num pad or wasd + ba]<br>
+^ is my fit hard (We'll be honest)<br>
+^ yo <br>
+
+
++ is my fit hard
+- no 
+
++ sega
+- <call>segafx</call>
+
++ why do i hear boss music
+- <call>bossMusic</call>
+
+//ambience :)
++ [*]music[*]
+- What type of music<br>
+^ <button onclick="chatbot.getReply('halo ambience')">Classic Halo</button><br>
+^ <button onclick="chatbot.getReply('minecraft ambience')">Classic Minecraft</button><br>
+^ <button onclick="chatbot.getReply('retro kirby ambience')">Retro Kirby</button></br>
+^ <button onclick="chatbot.getReply('epic ambience')">Epic</button></br>
+^ <button onclick="chatbot.getReply('depression ambience')">depression</button></br>
+^ league of legends ambience (not available, dont try it.....)
+
+
+
++ halo ambience
+- <call>haloAmbience</call><br>Martin O'Donnell - Unforgotten (Halo 2)
++ minecraft ambience
+- <call>minecraftAmbience</call><br>C418 - Wet Hands (Minecraft)
++ retro kirby ambience
+- <call>oldKirbyAmbience</call><br>Jun Ishikawa - Rainbow Resort (Kirby: Nightmare in Dreamland)
++ epic ambience
+- <call>epicAmbience</call><br>DavidOrr - Four Brave Champions (Castle Crashers)
++ depression ambience
+- <call>depressionAmbience</call><br>Junichi Masuda - Emotion <br>(Pokemon Black/White)
+
+//sin
++ league of legends ambience
+- Heres this instead nerd <br>
+^ <video width="320" height="240" autoplay ><source src="/audio/Grass.mp4" type="video/mp4"></video>
+
++ pause
+- <call>pauseAudio</call>
+// War crimes
++ yo
+- This you?<br>
+^ <call>getIPAddress</call> 
+
+//credits
++ credits
+- <strong>Credits:</strong><br>
+^ <br>
+^ <strong>Audio:</strong><br>
+^ Message Sound - Achievment (From Geometry Dash)<br>
+^ "Nerd" Music - Di Young - Pixel Pig
+^ Freddy Music Box/Jumpscare (From Five Nights at Freddy's)<br>
+^ Martin O'Donnell - Unforgotten (From Halo 2)<br>
+^ C418 - Wet Hands (From Minecraft)<br>
+^ Jun Ishikawa - Rainbow Resort (From Kirby: Nightmare in Dreamland)<br>
+^ DavidOrr - Four Brave Champions (From Castle Crashers)<br>
+^ Junichi Masuda - Emotion (From Pokemon Black/White)<br>
+^ Sega - Sega (From Sega)
+^ <br> 
+
++ source
+- <call>sourceData</call>
+
+//Recommendation
++ [*]recommend[*]
+- {topic=1} {@ start}
+
+
+//functions
+> object searchTerms javascript
+  var filtered = chatbot.dbFilter2(chatbot.db, "term", args); //used to be args[0]
+  var terms = filtered.map(function(row) {
+      return `${row.term}: ${row.definition}<hr>`;
+    });
+  var reply = "Sorry, this console may not be in our database yet";
+  if (terms.length) reply = "Alright, heres what a found:<br>" + terms.join(" ");
+  chatbot.postReply(reply, 2000);
+  return '';
+< object
+
+> object closeTab javascript
+  return closeTab();
+< object
+
+> object rickroll javascript
+  return rickroll();
+< object
+
+> object freddy javascript
+  return freddy();
+< object
+
+
+> object getIPAddress javascript
+  return getIPAddress();
+< object
+
+> object haloAmbience javascript
+  return haloAmbience();
+< object
+
+
+> object minecraftAmbience javascript
+  return minecraftAmbience();
+< object
+
+> object oldKirbyAmbience javascript
+  return oldKirbyAmbience();
+< object
+
+> object epicAmbience javascript
+  return epicAmbience();
+< object
+
+> object depressionAmbience javascript
+  return depressionAmbience();
+< object
+
+> object pauseAudio javascript
+return pauseAudio();
+< object
+
+> object sourceData javascript
+return sourceData();
+< object
+
+> object segafx javascript
+return segafx();
+< object
+
+> object bossMusic javascript
+return bossMusic();
+< object

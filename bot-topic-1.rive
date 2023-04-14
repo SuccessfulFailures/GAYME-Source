@@ -1,0 +1,123 @@
+  > topic 1
+  //start
+  //Branch 1 (Age Range)
+    + start
+    - Alright, lets get started (<strong>Note:</strong> This only recommends consoles after 2010)<br> 
+    ^ Let's start with age range. What age range are you looking for?<br>
+    ^ <button onclick="chatbot.getReply('6 10 years')">6-10 Years: Easy to use consoles with games made for a young gamers</button><br>
+    ^ <button onclick="chatbot.getReply('11 15 years')">11-15 Years: More immersive game experience</button><br>
+    ^ <button onclick="chatbot.getReply('16 20 years')">16-20 Years: Advanced gaming experience for online gaming</button><br>
+    ^ <button onclick="chatbot.getReply('21 30 years')">21-30 Years: Combination of gaming and entertainment</button><br>
+    ^ <button onclick="chatbot.getReply('31 plus')">31+ Years: Easy to use, better for streaming, web browsing, and social networking</button><br>
+   
+   //This is where the pain begins....
+   //Branch 2 (Activities)
+   + 11 15 years
+   - What type of games/activities are you hoping for this console?<br>
+   ^ <button onclick="chatbot.getReply('simulation')">Simulation</button><br>
+   ^ <button onclick="chatbot.getReply('graphics')">Graphics</button><br>
+   ^ <button onclick="chatbot.getReply('story')">Story</button><br>
+   ^ <button onclick="chatbot.getReply('racing')">Racing</button>
+
+   + 16 20 years
+   - What type of games/activities are you hoping for this console?<br>
+   ^ <button onclick="chatbot.getReply('online')">Online</button><br>
+   ^ <button onclick="chatbot.getReply('graphics')">Graphics</button><br>
+   ^ <button onclick="chatbot.getReply('story')">Story</button><br>
+   ^ <button onclick="chatbot.getReply('fps')">First Person Shooter (FPS)</button><br>
+
+  // Branch 3 - Budget
+   //11-15 Years
+    + simulation //Playstation
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply('300 400 ps')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('400 500 ps')">$400 - $500</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus ps')">$500+</button><br>
+
+    + graphics //Xbox
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply('300 400 xbox')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus xbox')">$500+</button><br>
+
+    + story //Playstation
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply('300 400 ps')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('400 500 ps')">$400 - $500</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus ps')">$500+</button><br>
+
+    + racing //Xbox 
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply ('300 400 xbox')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus xbox')">$500+</button><br>
+   //16-20 Years
+    + online //Xbox
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply ('300 400 xbox')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus xbox')">$500+</button><br>
+    + graphics //Xbox
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply('300 400 xbox')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus xbox')">$500+</button><br>
+    + story //Playstation
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply('300 400 ps')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('400 500 ps')">$400 - $500</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus ps')">$500+</button><br>
+    + fps //Xbox
+    - What's your budget range?<br>
+    ^ <button onclick="chatbot.getReply ('300 400 xbox')">$300 - $400</button><br>
+    ^ <button onclick="chatbot.getReply('500 plus xbox')">$500+</button><br>
+ 
+   // Branch 4 - Result
+   // 6-10 Years
+    + 6 10 years
+    - I recommend the Nintendo Switch, this console has 3 different models, find which one is right for you <a target="_blank" href="https://www.nintendo.com/switch/compare/">here</a>  
+   
+   //Xbox
+    + 300 400 xbox
+    - I recommend the Xbox One X,   <br>
+    ^ While this console is no longer available by the manufacturer, you may find it on other webstores such as <a target="_blank" href="https://www.amazon.com/Xbox-One-1TB-Console-Wireless-Controller/dp/B08ZH4WN39/ref=sr_1_2?crid=3P8YKFK9Y1TOD&keywords=xbox+one+x&qid=1681433877&sprefix=xbox+one+x%2Caps%2C197&sr=8-2">Amazon</a>
+    + 500 plus xbox
+    - I recommend the <a target="_blank" href="https://www.xbox.com/en-US/consoles/xbox-series-x#purchase">Xbox Series X</a>
+   //Playstation
+    + 300 400 ps
+    - I recommend the <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation4-1tb-console.3003348">Playstation 4 Slim</a>
+    + 400 500 ps
+    - I recommend the <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation5-digital-edition-console.1000031643">Playstation 5 Digital</a>  <br>
+    ^ <strong>Or</strong>, if you need a disc drive, <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation4-1tb-console.3003348">Playstation 4 Slim</a> for a lower price, or <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation5-console.1000031644">Playstation 5</a> for a higher price.
+    + 500 plus ps
+    - I recommend the <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation5-console.1000031644">Playstation 5</a>
+   //21-30 Years
+    + 21 30 years
+    - I recommend the Xbox One S, this console is great for streaming movies, videos, music and playing general games. You may also play CD/DVD discs.<br>
+    ^ While this console is no longer available by the manufacturer, you may find renewed consoles on websites such as <a target="_blank" href="https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_2?crid=2PJGZYHQJWC7&keywords=Xbox+one+S&qid=1681351798&sprefix=xbox+one+s%2Caps%2C736&sr=8-2">Amazon</a><br>
+    ^ <strong>Or</strong> you may get the <a target="_blank" href="https://www.xbox.com/en-US/consoles/xbox-series-s#purchase">Xbox Series S</a>, which has the same capabilies with faster boot times (No disc drive)
+
+
+   // 31+ Years
+    + 31 plus
+    - I recommend the Xbox One S, this console is great for streaming movies, videos and music, and can even play CD or DVD discs.<br>
+    ^ While this console is no longer available by the manufacturer, you may find renewed consoles on websites such as <a target="_blank" href="https://www.amazon.com/XBOX-500GB-Console-discontinued-Renewed/dp/B08FNP52TR/ref=sr_1_2?crid=2PJGZYHQJWC7&keywords=Xbox+one+S&qid=1681351798&sprefix=xbox+one+s%2Caps%2C736&sr=8-2">Amazon</a>
+
+   //other
+    + back
+    - {topic=random}Returning to menu<br>{@ start}
+    + [*]why[*]
+    - <strong>1.</strong> Older consoles are no longer being manufactured, some are even rare (such as the Virtual Boy or the original Xbox One)<br>
+    ^ <strong>2.</strong> Many services have been discontinued for legacy consoles (such as the Wii)<br>
+    ^ Our tool wouldn't be very useful if we recommend consoles that are no longer supported. 
+  < topic
+
+  // <button onclick="chatbot.getReply('')"></button><br>
+
+  // I recommend the <a target="_blank" href=""></a>
+
+  // <a target="_blank" href=""></a>  
+  
+  // What's your budget range?<br>
+
+  // ^ <button onclick="chatbot.getReply('100 300')">$100 - $300 - Outdated</button><br>
+
+  // ^ <button onclick="chatbot.getReply('300 400')">$300 - $400 - Middle range console, standard performance</button><br>
+
+  // ^ <button onclick="chatbot.getReply('400 plus')">$400+</button><br>
