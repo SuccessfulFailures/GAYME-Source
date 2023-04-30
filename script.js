@@ -12,8 +12,9 @@ function setup() {
 	pop = new Audio('ba-ding.ogg');
   chatbot.replyDelay = 500;
   chatbot.getDB('https://docs.google.com/spreadsheets/d/e/2PACX-1vTX1G1C80I1MufDWH56dTMKTyFQ8ppt71byi-jwIa_RKB-_581TU9GLPDF2gnWlvJ_m3K5wSQGlOxUl/pub?output=csv').then(data => {
-    chatbot.db = data;
-    chatbot.loadFiles(['bot.rive', 'bot-topic-1.rive']);  
+  chatbot.getDB('https://docs.google.com/spreadsheets/d/e/2PACX-1vT1rV047D63aETXB1FATtD683VNLGaV8biIsrHeFdDUkaD_bO-qaK6eKbni-VkPz74hxplT0AusDhEC/pub?output=csv').then(data => chatbot.db2 = data); 
+  chatbot.db = data;
+    chatbot.loadFiles(['bot.rive', 'bot-topic-1.rive', 'bot-topic-2.rive', 'bot-topic-3.rive']);  
   });
 }	
 window.onload = setup;
@@ -138,3 +139,4 @@ return data.ip;
     doom.play();
     return "¯\_(ツ)_/¯"
   }
+
