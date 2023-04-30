@@ -1,0 +1,28 @@
+  > topic 2
+  //warning
++ start
+- Alright, but first please note that modding a console could potentially lead to the console being permanently damaged or bricked if not careful or could lead to getting permanently banned from online services and/or games. Please follow through instructions carefully. For legal reasons, we are unable to provide instructions for modding consoles or installing games. Do you wish to proceed? (Yes/No)
+
++ *
+- Sorry I dont understand
+
++ yes
+- Please type “I understand” in the chat box. This is to ensure that you have read the warnings and we are not responsible for any damage or legal action taken.
+
++ no
+- {topic=random} OK. Returning to menu. <br>{@ start}
+
++ i understand
+- Great, let's continue. The best console for modding is the Nintendo Wii. There is a less chance of it being bricked and has ways of being unbricked if it ever does. As for modern consoles, such as the Switch or Playstation, you could get permanently banned from online services such as the online shop. 
+
+//possible keywords
+
++ [*]illegal[*]
+- Modding the console itself is not illegal, but it does go against most console manufacturers policy and terms of service. However downloading, or pirating games, is illegal, this is because you are not paying for the game’s license. Depending on where you live, this could lead to a punishment of 10 years in prison or a fine of at least $750 per game. 
++ [*]more[*]
+- Another option is the Nintendo Wii U, despite it being considered Nintendo worst console, it has great potential when hacked. Apart from being able to play region locked games (like the wii), it can play almost any other Nintendo game from past consoles.
+ 
+ //back
+ + back
+ - {topic=random} Returning to menu<br>{@ start}
+ < topic
