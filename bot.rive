@@ -10,46 +10,97 @@
 + help
 - Here are a couple commands to help you get started<br>
 ^ - Search "console"<br>
-^ - Ambience<br>
+^ - Music<br>
 ^ - pause (when music is playing)<br>
 ^ - Credits<br>
 ^ - Best Console (for kids)<br>
 ^ - Source (display database)<br>
+^ - Recommend<br>
 ^ - ₛₑ𝒸ᵣₑₜ<br>
 ^ <br>
 ^ Hacker? Ask about hacking your console (at your own risk)
+
+
 //^ - Favorite "console" game <br> //to be determined
+//  <a target="_blank" href=""></a><br>
+
+// Personality
++ hello
+- <img src="https://yt3.googleusercontent.com/ytc/AGIKgqMV6gUgsFEUzYcGdSasg0IOK2D-ZYFoXHDqpLPJ-Q=s900-c-k-c0x00ffffff-no-rj" width="300"><br>Hello friend UwU, you wanna look at some drippy consoles? Luckily, for you, all you have to do is sub to my twitch ÒwÒ, or you can just ask for a certain brand but only if you say please >w<          
+
++ [*]report[*][*]you[*]
+- Please dude I’m just trying to live, I got a $20 to last me for the rest of the month. Please don’t get me fired
+
++ [*]whats up[*]
+- Not much
+
++ bye
+- Goodbye! Have a great day!
+
++ [*]like[*] [*]free time[*]
+- Cry 
+
++ what is your name
+- My name is GAYME (Game Advisor for Your own Means and Ease)
+
++ [*]weather[*]
+- Whats a weather?
+
++ [*]losing[*]
+- Lol you bad
+
++ [*]full name[*]
+- ÓwÖ You can call me Gamye but my papers say Game Advisor for Your own Means and Ease
+
++ [*]favorite[*] [*]video game company[*]
+- <a target="_blank" href="https://www.youtube.com/watch?v=NChbBPD9Y8M">SAGGGGGAAAAA (Sponsored by Ur Mom)</a>
+
++ what do you think of furries
+- 8/10 would furr again
+
++ [*]roleplay[*]
+- As an AI that was made to do a little   e x t r a~ That's out of my price range {Weirdo}.
+
++ [*]carpet[*]
+- {topic=3} {@ start}
+
++ hi
+- <call>getRandomTerm</call>
+
+ 
 
 
 
 //Best consoles (May be removed) (first diaglog tree)
 + [*]best consoles[*] [*]kids[*]
-- instert list
+- Here are two of the leading consoles for kids<br>
+^ <a target="_blank" href="https://www.nintendo.com/store/products/nintendo-switch-neon-blue-neon-red-joy-con-117972/">Nintendo Switch</a><br>
+^ <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation4-1tb-console.3003348">Playstation</a>
 
 + [*]best console[*] [*]kids[*] //difference between this and last is there is no s in end of consoles (it doesnt want to add more than 2 keywords)
-- insert list
+- Here are two of the leading consoles for kids<br>
+^ <a target="_blank" href="https://www.nintendo.com/store/products/nintendo-switch-neon-blue-neon-red-joy-con-117972/">Nintendo Switch</a><br>
+^ <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation4-1tb-console.3003348">Playstation</a>
 
 + [*]best consoles[*]
-- insert list
+- Here are the top 3 leading consoles<br>
+^ <a target="_blank" href="https://www.xbox.com/en-US/consoles/xbox-series-x#purchase">Xbox Series X</a><br>
+^ <a target="_blank" href="https://www.nintendo.com/store/products/nintendo-switch-neon-blue-neon-red-joy-con-117972/">Nintendo Switch</a><br>
+^ <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation4-1tb-console.3003348">Playstation 5</a>
 
 + [*]best console[*] //difference between this and last is there is no s in end of consoles (it doesnt want to add more than 2 keywords)
-- insert list
+- Here are the top 3 leading consoles<br>
+^ <a target="_blank" href="https://www.xbox.com/en-US/consoles/xbox-series-x#purchase">Xbox Series X</a><br>
+^ <a target="_blank" href="https://www.nintendo.com/store/products/nintendo-switch-neon-blue-neon-red-joy-con-117972/">Nintendo Switch</a><br>
+^ <a target="_blank" href="https://direct.playstation.com/en-us/consoles/console/playstation4-1tb-console.3003348">Playstation 5</a>
 
-
-
-//uwu I add stuff
-+ [*]nintendo[*][*]models[*]
-- So you wanna see this game console with some drip ;)<br>The Nintendo Switch has multiple alts<br>
-^ <a target="_blank" href="https://www.nintendo.com/store/products/nintendo-switch-oled-model-white-set/"> Nintendo Switch</a><br>
-^ <a target="_blank" href=""Nintendo Switch OLED<br>
-^ Nintendo Switch lite<br>
 
 
 //Describes console modding/hacking (second dialog tree)
 + [*]hacked[*]
-- {topic=1} {@ start}
+- {topic=2} {@ start}
 + [*]hack[*]
-- {topic=1} {@ start}
+- {topic=2} {@ start}
 
 //Console search (third dialog tree) ()
 + search *
@@ -89,9 +140,11 @@
 ^ [insert konami code on num pad or wasd + ba]<br>
 ^ is my fit hard (We'll be honest)<br>
 ^ yo <br>
+^ Sega<br>
+^ Why do I hear boss music<br>
 
 
-+ is my fit hard
++ [*]fit[*] [*]hard[*]
 - no 
 
 + sega
@@ -133,7 +186,10 @@
 // War crimes
 + yo
 - This you?<br>
-^ <call>getIPAddress</call> 
+^ <call>getIPAddress</call>
+
++ random insult
+- <call>getRandomFlipcard</call>
 
 //credits
 + credits
@@ -148,7 +204,8 @@
 ^ Jun Ishikawa - Rainbow Resort (From Kirby: Nightmare in Dreamland)<br>
 ^ DavidOrr - Four Brave Champions (From Castle Crashers)<br>
 ^ Junichi Masuda - Emotion (From Pokemon Black/White)<br>
-^ Sega - Sega (From Sega)
+^ Sega - Sega (From Sega)<br>
+^ Mick Gordon - The Only Thing They Fear Is You (Doom)
 ^ <br> 
 
 + source
@@ -157,6 +214,7 @@
 //Recommendation
 + [*]recommend[*]
 - {topic=1} {@ start}
+
 
 
 //functions
@@ -223,4 +281,10 @@ return segafx();
 
 > object bossMusic javascript
 return bossMusic();
+< object
+
+> object getRandomTerm javascript
+var randomIndex = Math.floor(Math.random() * chatbot.db2.length);
+var currentItem = chatbot.db2[randomIndex]
+return currentItem.term;
 < object
