@@ -4,8 +4,8 @@
 //- Hiya friend, Im GAYME here to help with game consoles.<br>
 - Hiya friend, Im GAYME here to help with game consoles. How can I start you off for today?
 
-+ *
-- Sorry, as a gamer I don't go outside and don't understand human very well, please rephrase
+//+ *
+//- Sorry, as a gamer I don't go outside and don't understand human very well, please rephrase
 
 + help
 - Here are a couple commands to help you get started<br>
@@ -20,6 +20,16 @@
 ^ <br>
 ^ Hacker? Ask about hacking your console (at your own risk)
 
+
+
+//change log
++ log
+- Last Update: 5/11/2023 10:29PM<br>
+^ search all<br>
+^ Rewritten console description<br>
+^ Images in search<br>
+^ New Consoles: Atari 2600, Atari 7800, Atari Jaguar<br>
+^ PC consoles explained
 
 //^ - Favorite "console" game <br> //to be determined
 //  <a target="_blank" href=""></a><br>
@@ -64,12 +74,51 @@
 + [*]carpet[*]
 - {topic=3} {@ start}
 
+
+
 + hi
 - <call>getRandomTerm</call>
 
- 
 
+//woah pretty colors
++ [*]red[*]
+- <call>red</call>
 
++ [*]blue[*]
+- <call>blue</call>
+
++ [*]green[*]
+- <call>green</call>
+
++ [*]orange[*]
+- <call>orange</call>
+
++ [*]yellow[*]
+- <call>yellow</call>
+
++ [*]pink[*]
+- <call>pink</call>
+
++ [*]purple[*]
+- <call>purple</call>
+
++ [*]indigo[*]
+- <call>indigo</call>
+
++ [*]violet[*]
+- <call>violet</call>
+
++ [*]brown[*]
+- <call>brown</call>
+
++ [*]gray[*]
+- <call>gray</call>
+
++ [*]black[*]
+- <call>black</call>
+
++ [*]white[*]
+- <call>white</call>
 
 //Best consoles (May be removed) (first diaglog tree)
 + [*]best consoles[*] [*]kids[*]
@@ -106,6 +155,20 @@
 + search *
 - Searching... <call>searchTerms <star></call>
 
++ [*]how much[*] *
+- Searching... <call>searchPrice <star></call>
+
++ [*]price[*] *
+- Searching... <call>searchPrice <star></call>
+
++ [*]does[*] [*]pc[*]
+- While a PC can be used for gaming, it is not typically referred to as a "console" in the same sense as dedicated gaming systems. Instead, it is more commonly called a gaming PC or simply a PC. However, it's worth noting that there are instances where the term "console" is used more broadly to include PCs within the gaming community, but this usage is not as common or widely accepted.
+
++ [*]does[*] [*]computer[*]
+- While a PC can be used for gaming, it is not typically referred to as a "console" in the same sense as dedicated gaming systems. Instead, it is more commonly called a gaming PC or simply a PC. However, it's worth noting that there are instances where the term "console" is used more broadly to include PCs within the gaming community, but this usage is not as common or widely accepted.
+
++ search all
+ - Searching... <call>searchAll <star></call>
 
 //easter eggs
 + 88224646ba
@@ -218,16 +281,33 @@
 
 
 //functions
+//console search
 > object searchTerms javascript
   var filtered = chatbot.dbFilter2(chatbot.db, "term", args); //used to be args[0]
   var terms = filtered.map(function(row) {
       return `${row.term}: ${row.definition}<hr>`;
     });
-  var reply = "Sorry, this console may not be in our database yet";
+  var reply = "Sorry, this system may either not be in our database or spelling is incorrect";
   if (terms.length) reply = "Alright, heres what a found:<br>" + terms.join(" ");
   chatbot.postReply(reply, 2000);
   return '';
 < object
+//price search
+> object searchPrice javascript
+  var filtered = chatbot.dbFilter2(chatbot.db3, "term", args); //used to be args[0]
+  var terms = filtered.map(function(row) {
+      return `${row.term}: ${row.definition}<hr>`;
+    });
+  var reply = "Sorry, this system may either not be in our database or spelling is incorrect";
+  if (terms.length) reply = "Alright, heres what a found:<br>" + terms.join(" ");
+  chatbot.postReply(reply, 2000);
+  return '';
+< object
+
+> object searchAll javascript
+return searchAll();
+< object
+
 
 > object closeTab javascript
   return closeTab();
@@ -287,4 +367,60 @@ return bossMusic();
 var randomIndex = Math.floor(Math.random() * chatbot.db2.length);
 var currentItem = chatbot.db2[randomIndex]
 return currentItem.term;
+< object
+
+> object red javascript
+return red();
+< object
+
+> object blue javascript
+return blue();
+< object
+
+> object green javascript
+return green();
+< object
+
+> object orange javascript
+return orange();
+< object
+
+> object yellow javascript
+return yellow();
+< object
+
+> object pink javascript
+return pink();
+< object
+
+> object purple javascript
+return purple();
+< object
+
+> object indigo javascript
+return indigo();
+< object
+
+> object violet javascript
+return violet();
+< object
+
+> object brown javascript
+return brown();
+< object
+
+> object gray javascript
+return gray();
+< object
+
+> object black javascript
+return black();
+< object
+
+> object white javascript
+return white();
+< object
+
+> object brainshopAPI javascript
+return brainshopAPI();
 < object
