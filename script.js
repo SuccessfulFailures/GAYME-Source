@@ -12,7 +12,8 @@ function setup() {
 	pop = new Audio('ba-ding.ogg');
   chatbot.replyDelay = 500;
   chatbot.getDB('https://docs.google.com/spreadsheets/d/e/2PACX-1vTX1G1C80I1MufDWH56dTMKTyFQ8ppt71byi-jwIa_RKB-_581TU9GLPDF2gnWlvJ_m3K5wSQGlOxUl/pub?output=csv').then(data => {
-  chatbot.getDB('https://docs.google.com/spreadsheets/d/e/2PACX-1vT1rV047D63aETXB1FATtD683VNLGaV8biIsrHeFdDUkaD_bO-qaK6eKbni-VkPz74hxplT0AusDhEC/pub?output=csv').then(data => chatbot.db2 = data); 
+  chatbot.getDB('https://docs.google.com/spreadsheets/d/e/2PACX-1vT1rV047D63aETXB1FATtD683VNLGaV8biIsrHeFdDUkaD_bO-qaK6eKbni-VkPz74hxplT0AusDhEC/pub?output=csv').then(data => chatbot.db2 = data);
+  chatbot.getDB('https://docs.google.com/spreadsheets/d/e/2PACX-1vT3t4kpJt0b9FXRUDlUyP1H7KlUXSp-qLGLA8bNPqMm5bWRuwoJdO7I4QiaV8WPo_Ab03acMszPPxcv/pub?output=csv').then(data => chatbot.db3 = data);  
   chatbot.db = data;
     chatbot.loadFiles(['bot.rive', 'bot-topic-1.rive', 'bot-topic-2.rive', 'bot-topic-3.rive']);  
   });
@@ -140,3 +141,81 @@ return data.ip;
     return "¯\_(ツ)_/¯"
   }
 
+  //Colors woah.........
+
+    function red(){
+      document.body.style.color = 'red';
+      return "woah the text now red"
+    }
+    function green(){
+      document.body.style.color = 'green';
+      return "woah the text now green"
+    }
+    function blue(){
+      document.body.style.color = 'blue';
+      return "woah the text now blue"
+    }
+    function orange(){
+      document.body.style.color = 'orange';
+      return "woah the text now orange"
+    }
+    function yellow(){
+      document.body.style.color = 'yellow';
+      return "you cannot read that..."
+    }
+    function pink(){
+      document.body.style.color = 'pink';
+      return "woah the text now pink"
+    }
+    function purple(){
+      document.body.style.color = 'purple';
+      return "woah the text now purple"
+    }
+    function indigo(){
+      document.body.style.color = 'indigo';
+      return "woah the text now indigo"
+    }
+    function violet(){
+      document.body.style.color = 'violet';
+      return "woah the text now violet"
+    }
+    function brown(){
+      document.body.style.color = 'brown';
+      return "woah the text now brown"
+    }
+    function gray(){
+      document.body.style.color = 'gray';
+      return "you sad sack of lard"
+    }
+    function black(){
+      document.body.style.color = 'black';
+      return "you're basic"
+    }
+    function white(){
+      document.body.style.color = 'white';
+      return "you barely read the text now idiot..."
+    }
+  
+   function searchAll(){
+    //var filtered = chatbot.dbFilter2(chatbot.db, "term", args); //used to be args[0]
+    // return "searching..."
+
+  console.log(chatbot.db);
+  var finalHTML = ''
+  chatbot.db.forEach(  x => {
+    console.log(x.term)
+    finalHTML += `<p>${x.definition}</p>`
+
+    
+
+  });
+
+  return finalHTML;
+  // var terms = filtered.map(function(row) {
+  //     return `${row.term}: ${row.definition}<hr>`;
+  //   });
+  // var reply = "Sorry, this system may either not be in our database or spelling is incorrect";
+  // if (terms.length) reply = "Alright, heres what a found:<br>" + terms.join(" ");
+  // chatbot.postReply(reply, 2000);
+  // return '';
+   }
