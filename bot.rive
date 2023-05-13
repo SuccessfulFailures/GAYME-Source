@@ -4,8 +4,8 @@
 //- Hiya friend, Im GAYME here to help with game consoles.<br>
 - Hiya friend, Im GAYME here to help with game consoles. How can I start you off for today?
 
-//+ *
-//- Sorry, as a gamer I don't go outside and don't understand human very well, please rephrase
++ *
+- Sorry, as a gamer I don't go outside and don't understand human very well, please rephrase
 
 + help
 - Here are a couple commands to help you get started<br>
@@ -19,6 +19,7 @@
 ^ - ₛₑ𝒸ᵣₑₜ<br>
 ^ <br>
 ^ Hacker? Ask about hacking your console (at your own risk)
+
 
 
 
@@ -74,6 +75,29 @@
 + [*]carpet[*]
 - {topic=3} {@ start}
 
++ [*]support nfts[*]
+- <call>nft</call>
+
++ [*]insult me[*]
+- <call>insult</call>
+
++ [*]free[*] [*]ps5[*]
+- If you’re worried about how much a console costs, I’d give up nOwO.
+
++ are you single
+- I’m always ready to mingle with the signals ;) M’lady~
+
++ im never coming back here
+- K
+
++ can you sing
+- UwU you so warm… I forget the rest.
+
++ [*]bad websites[*]
+- No
+
++ [*]pick up lines[*]
+- What if we… compare turnip prices… hahah jk… Unless? (⁄ ⁄•⁄ω⁄•⁄ ⁄)
 
 
 + hi
@@ -366,6 +390,18 @@ return bossMusic();
 > object getRandomTerm javascript
 var randomIndex = Math.floor(Math.random() * chatbot.db2.length);
 var currentItem = chatbot.db2[randomIndex]
+return currentItem.term;
+< object
+
+> object insult javascript
+var randomIndex = Math.floor(Math.random() * chatbot.db4.length);
+var currentItem = chatbot.db4[randomIndex]
+return currentItem.term;
+< object
+
+> object nft javascript
+var randomIndex = Math.floor(Math.random() * chatbot.db5.length);
+var currentItem = chatbot.db5[randomIndex]
 return currentItem.term;
 < object
 
